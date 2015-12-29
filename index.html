@@ -1,7 +1,342 @@
-Hello World!!
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="37HLE743JVRZA">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-</form>
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>ExeSQL | Library for .Net</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Library for .Net for client database" name="description" />
+    <meta content="Irving Hinojos" name="author" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Themes/uniformjs/default/css/uniform.default.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="Content/plugins-md.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="Content/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="Content/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-full-width page-md">
+    <div class="page-header navbar navbar-fixed-top">
+        <div class="page-header-inner ">
+            <div class="page-logo">
+                <a href="index.html">
+                    <img class="logo-default" src="Images/logo.png">
+                </a>
+            </div>
+            <div class="hor-menu hidden-sm hidden-xs">
+                <ul class="nav navbar-nav">
+                    <li class="classic-menu-dropdown active">
+                        <a href="index.html">
+                            Home
+                            <span class="selected"> </span>
+                        </a>
+                    </li>
+                    <li class="classic-menu-dropdown">
+                        <a href="Documentation.html">
+                            Documentation
+                        </a>
+                    </li>
+                    <li class="classic-menu-dropdown">
+                        <a href="javascript:;" class="page-quick-sidebar-toggler2">
+                            Downloads
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown dropdown-quick-sidebar-toggler">
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <i class="icon-logout"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+    <div class="page-container">
+        <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse">
+                <div class="page-sidebar-wrapper">
+                    <ul class="page-sidebar-menu visible-sm visible-xs  page-header-fixed">
+                        <li class="nav-item start active open" >
+                            <a href="index.html" class="nav-link nav-toggle">
+                                Home
+                                <span class="selected"> </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Documentation.html" class="nav-link nav-toggle">
+                                Documentation
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="page-quick-sidebar-toggler2">
+                                Downloads
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <span>Home</span>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="page-title">
+                    ExeSQL
+                    <small>Library for .Net for client of database</small>
+                </h3>
+                <div class="row">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-info-circle font-green"></i>
+                                    <span class="caption-subject font-green bold uppercase">About</span>
+                                    <span class="caption-helper">this library</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                This library was created to facilitate the execution of SQL statements for different types of databases which are still working on this project to enhance its functionality.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-question font-green"></i>
+                                    <span class="caption-subject font-green bold uppercase">Why</span>
+                                    <span class="caption-helper">this library</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Why use this library? They have to ask the answer is simple, the library allows the execution of judgments on any computer regardless of the client version that you have installed, so this also helps teams work because it is not necessary for everyone the same version of the client to execute the statements.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-envelope font-green"></i>
+                                    <span class="caption-subject font-green bold uppercase">Contact</span>
+                                    <span class="caption-helper">me</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Please make your visit to this small library that I hope will be very useful if you have a suggestion or anything you want to say you can contact me by email <b>irving.h.s@hotmail.com</b>, all comments will be reviewed and taken into consideration.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-comment font-green"></i>
+                                    <span class="caption-subject font-green bold uppercase">Comment</span>
+                                    <span class="caption-helper">for you</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                Like any project is in its initial stage released the 1.0 version for your enjoyment so far only for Oracle, keep working to expand to different databases, thanks for everything and we hope that the projects go ahead.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="page-quick-sidebar-toggler">
+            <i class="icon-login"></i>
+        </a>
+        <div class="page-quick-sidebar-wrapper" data-close-on-body-click="false">
+            <div class="page-quick-sidebar">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="javascript:;" data-target="#quick_sidebar_tab_1" data-toggle="tab">
+                            Downloads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-target="#quick_sidebar_tab_2" data-toggle="tab">
+                            Changelog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
+                            Donate
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab_1">
+                        <div class="page-quick-sidebar-alerts-list" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list">
+                            <h3 class="list-heading">Latest Version</h3>
+                            <ul class="media-list list-items">
+                                <li class="media" onclick="Download('LatestOracle');" >
+                                    <div class="media-status"></div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.0 for Oracle</h4>
+                                        <div class="media-heading-sub"> First Release</div>
+                                        <div class="label label-sm label-danger">
+                                            <span class="date"><i class="fa fa-database"></i>29/12/2015</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h3 class="list-heading">Old Versions</h3>
+                            <ul class="media-list list-items">
+                                <li class="media">
+                                    <div class="media-status"></div>
+                                    <div class="media-body">
+                                        <!--<h4 class="media-heading"></h4>
+                                        <div class="media-heading-sub"> CEO, Loop Inc </div>
+                                        <div class="media-heading-small"> Last seen 03:10 AM </div>-->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane page-quick-sidebar-alerts" id="quick_sidebar_tab_2">
+                        <div class="page-quick-sidebar-alerts-list">
+                            <h3 class="list-heading"><i class="fa fa-database"></i> v1.0.0.0 for Oracle</h3>
+                            <ul class="feeds list-items">
+                                <li>
+                                    <div class="col1">
+                                        <div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-info">
+                                                    <i class="fa fa-info"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Only makes calls to procedures
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-success">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Implemented methods of execution of stored procedures
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-success">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Implemented method for Xcopy versions of Oracle
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane page-quick-sidebar-settings" id="quick_sidebar_tab_3">
+                        <div class="page-quick-sidebar-settings-list">
+                            <ul class="list-items borderless">
+                                <li>
+                                    Your donations will be helpful to the continuation of this project, thank you very much.
+                                    <center>
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="37HLE743JVRZA">
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                    </center>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <div class="page-footer-inner">
+            2016 &copy; ExeSQL by Irving Hinojos.
+        </div>
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+        </div>
+    </div>
+    <!--[if lt IE 9]>
+        <script src="Scripts/respond.min.js"></script>
+        <script src="Scripts/excanvas.min.js"></script>
+    <![endif]-->
+    <script src="Scripts/jquery-2.1.4.min.js" type="text/javascript" ></script>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.blockUI.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap-switch.min.js" type="text/javascript"></script>
+    <script src="Scripts/app.min.js" type="text/javascript"></script>
+    <script src="Scripts/layout.min.js" type="text/javascript"></script>
+    <script src="Scripts/quick-sidebar.min.js" type="text/javascript"></script>
+    <script>
+        function Download(version) {
+            switch (version) {
+                case "1.0.0.0":
+                    window.open("dist/1.0.0.0 Oracle.zip");
+                    break;
+                case "LatestOracle":
+                    window.open("dist/Latest Version Oracle.zip");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
