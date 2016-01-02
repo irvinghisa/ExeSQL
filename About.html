@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
@@ -20,6 +20,7 @@
     <link href="Content/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
     <link href="Content/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link href="Content/plugins-md.min.css" rel="stylesheet" type="text/css" />
+	<link href="Content/profile.min.css" rel="stylesheet" type="text/css" />
     <link href="Content/layout.min.css" rel="stylesheet" type="text/css" />
     <link href="Content/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <link href="Content/custom.min.css" rel="stylesheet" type="text/css" />
@@ -34,10 +35,9 @@
             </div>
             <div class="hor-menu hidden-sm hidden-xs">
                 <ul class="nav navbar-nav">
-                    <li class="classic-menu-dropdown active">
+                    <li class="classic-menu-dropdown">
                         <a href="index.html">
                             Home
-                            <span class="selected"> </span>
                         </a>
                     </li>
                     <li class="classic-menu-dropdown">
@@ -45,9 +45,10 @@
                             Documentation
                         </a>
                     </li>
-					<li class="classic-menu-dropdown">
+					<li class="classic-menu-dropdown active">
                         <a href="About.html">
                             About
+							<span class="selected"> </span>
                         </a>
                     </li>
                     <li class="classic-menu-dropdown">
@@ -75,10 +76,9 @@
             <div class="page-sidebar navbar-collapse collapse">
                 <div class="page-sidebar-wrapper">
                     <ul class="page-sidebar-menu visible-sm visible-xs  page-header-fixed">
-                        <li class="nav-item start active open" >
+                        <li class="nav-item start" >
                             <a href="index.html" class="nav-link nav-toggle">
                                 Home
-                                <span class="selected"> </span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -86,11 +86,12 @@
                                 Documentation
                             </a>
                         </li>
-						<li class="nav-item">
-							<a href="About.html">
-								About
-							</a>
-						</li>
+						<li class="nav-item active open" >
+                            <a href="About.html" class="nav-link nav-toggle">
+                                About
+                                <span class="selected"> </span>
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a href="javascript:;" class="page-quick-sidebar-toggler2">
                                 Downloads
@@ -114,86 +115,64 @@
                     <small>Library for .Net for client of database</small>
                 </h3>
                 <div class="row">
-                    <div class="col-md-5 col-sm-5">
-                        <div class="portlet light bordered">
-                            <div class="portlet-title">
-                                <div class="caption">
-                                    <i class="fa fa-info-circle font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">About</span>
-                                    <span class="caption-helper">this library</span>
-                                </div>
-                                <div class="actions">
-                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portlet-body">
-                                This library was created to facilitate the execution of SQL statements for different types of databases which are still working on this project to enhance its functionality.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-sm-7">
-                        <div class="portlet light bordered">
-                            <div class="portlet-title">
-                                <div class="caption">
-                                    <i class="fa fa-question font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">Why</span>
-                                    <span class="caption-helper">this library</span>
-                                </div>
-                                <div class="actions">
-                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portlet-body">
-                                Why use this library? They have to ask the answer is simple, the library allows the execution of judgments on any computer regardless of the client version that you have installed, so this also helps teams work because it is not necessary for everyone the same version of the client to execute the statements.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="portlet light bordered">
-                            <div class="portlet-title">
-                                <div class="caption">
-                                    <i class="fa fa-envelope font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">Contact</span>
-                                    <span class="caption-helper">me</span>
-                                </div>
-                                <div class="actions">
-                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portlet-body">
-                                Please make your visit to this small library that I hope will be very useful if you have a suggestion or anything you want to say you can contact me by email <b>irving.h.s@hotmail.com</b>, all comments will be reviewed and taken into consideration.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="portlet light bordered">
-                            <div class="portlet-title">
-                                <div class="caption">
-                                    <i class="fa fa-comment font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">Comment</span>
-                                    <span class="caption-helper">for you</span>
-                                </div>
-                                <div class="actions">
-                                    <div class="btn-group btn-group-devided" data-toggle="buttons">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portlet-body">
-                                Like any project is in its initial stage released the 1.0 version for your enjoyment so far only for Oracle, keep working to expand to different databases, thanks for everything and we hope that the projects go ahead.
-                            </div>
-                        </div>
-                    </div>
+					<div class="col-md-offset-3 col-md-3">
+						<div class="portlet light bordered profile-sidebar-portlet ">
+							<div class="profile-userpic">
+								<img src="https://avatars3.githubusercontent.com/u/1730243?v=3&u=a04307ca095ced19ed9a4691dd0f085b802e7767&s=750" class="img-responsive" alt=""> 
+							</div>
+							<div class="profile-usertitle">
+								<div class="profile-usertitle-name"> Irving Hinojos </div>
+								<div class="profile-usertitle-job"> Developer </div>
+							</div>
+							<div class="profile-userbuttons">
+								<a class="btn btn-circle green btn-sm" href="https://github.com/irvinghisa/ExeSQL" target="_blank" aria-label="Star on GitHub">
+									<i class="fa fa-github" ></i>
+									Star ExeSQL
+									<span class="badge badge-success" id="SCOUNT"></span>
+								</a><br />
+								<a class="btn btn-circle green btn-sm" href="https://github.com/irvinghisa/ExeSQL" target="_blank" aria-label="Watch on GitHub">
+									<i class="fa fa-github" ></i>
+									Watch ExeSQL
+									<span class="badge badge-success" id="WCOUNT"></span>
+								</a><br />
+								<a class="btn btn-circle green btn-sm" href="https://github.com/irvinghisa/ExeSQL" target="_blank" aria-label="Fork on GitHub">
+									<i class="fa fa-github" ></i>
+									Fork ExeSQL
+									<span class="badge badge-success" id="FCOUNT"></span>
+								</a>
+							</div>
+							<br />
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="portlet light bordered">
+								<div class="row list-separated profile-stat">
+									<div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-3 col-xs-6">
+										<div class="uppercase profile-stat-title"> 3 </div>
+										<div class="uppercase profile-stat-text"> Projects </div>
+									</div>
+								</div>
+								<div>
+									<h4 class="profile-desc-title">List Projects of Irving Hinojos</h4>
+									<span class="profile-desc-text">Own projects that I have developed.</span>
+									<div class="margin-top-20 profile-desc-link">
+										<i class="fa fa-cloud"></i>
+										<a href="http://www.municipiochihuahua.gob.mx">Municipal Portal</a>
+									</div>
+									<div class="margin-top-20 profile-desc-link">
+										<i class="fa fa-cloud"></i>
+										<a href="http://beneficiarios.mpiochih.gob.mx">Beneficiaries System</a>
+									</div>
+									<div class="margin-top-20 profile-desc-link">
+										<i class="fa fa-cloud-download"></i>
+										<a href="http://irvinghisa.github.io/ExeSQL/">ExeSQL</a>
+									</div>
+								</div>
+							</div>
+						</div>
                 </div>
             </div>
+        </div>
         </div>
         <a href="javascript:;" class="page-quick-sidebar-toggler">
             <i class="icon-login"></i>
@@ -398,6 +377,22 @@
                     break;
             }
         }
+		
+		$(document).ready(function(){
+			$.get( "https://api.github.com/repos/irvinghisa/ExeSQL", function() {
+				
+			})
+			.done(function(rs) {
+				$("#SCOUNT").text(rs.watchers);
+				$("#WCOUNT").text(rs.subscribers_count);
+				$("#FCOUNT").text(rs.forks);
+			})
+			.fail(function() {
+					$("#SCOUNT").text(0);
+					$("#WCOUNT").text(0);
+					$("#FCOUNT").text(0);
+			});
+		});
     </script>
 </body>
 </html>

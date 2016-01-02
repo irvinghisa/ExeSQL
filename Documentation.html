@@ -45,6 +45,11 @@
                             <span class="selected"> </span>
                         </a>
                     </li>
+					<li class="classic-menu-dropdown">
+                        <a href="About.html">
+                            About
+                        </a>
+                    </li>
                     <li class="classic-menu-dropdown">
                         <a href="javascript:;" class="page-quick-sidebar-toggler2">
                             Downloads
@@ -81,6 +86,11 @@
                                 <span class="selected"> </span>
                             </a>
                         </li>
+						<li class="nav-item">
+							<a href="About.html">
+								About
+							</a>
+						</li>
                         <li class="nav-item">
                             <a href="javascript:;" class="page-quick-sidebar-toggler2">
                                 Downloads
@@ -328,25 +338,27 @@
                         <div class="page-quick-sidebar-alerts-list" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list">
                             <h3 class="list-heading">Latest Version</h3>
                             <ul class="media-list list-items">
-                                <li class="media" onclick="Download('LatestOracle');">
+                                <li class="media" onclick="Download('LatestOracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
-                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.0 for Oracle</h4>
-                                        <div class="media-heading-sub"> First Release</div>
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.5 for Oracle</h4>
+                                        <div class="media-heading-sub"> Final Release</div>
                                         <div class="label label-sm label-danger">
-                                            <span class="date"><i class="fa fa-database"></i>29/12/2015</span>
+                                            <span class="date"><i class="fa fa-database"></i>01/01/2016</span>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                             <h3 class="list-heading">Old Versions</h3>
                             <ul class="media-list list-items">
-                                <li class="media">
+                                <li class="media" onclick="Download('1.0.0.0 Oracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
-                                        <!--<h4 class="media-heading"></h4>
-                                        <div class="media-heading-sub"> CEO, Loop Inc </div>
-                                        <div class="media-heading-small"> Last seen 03:10 AM </div>-->
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.0 for Oracle</h4>
+                                        <div class="media-heading-sub">Release 1.0.0.0</div>
+                                        <div class="label label-sm label-danger">
+                                            <span class="date"><i class="fa fa-database"></i>29/12/2015</span>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -354,7 +366,56 @@
                     </div>
                     <div class="tab-pane page-quick-sidebar-alerts" id="quick_sidebar_tab_2">
                         <div class="page-quick-sidebar-alerts-list">
-                            <h3 class="list-heading"><i class="fa fa-database"></i> v1.0.0.0 for Oracle</h3>
+                            <h3 class="list-heading">
+								<i class="fa fa-database"></i> 
+								v1.0.0.5 for Oracle
+								<div class="label label-sm label-danger">
+									<span class="date">
+										<i class="fa fa-database"></i>
+										01/01/2016
+									</span>
+								</div>
+							</h3>
+                            <ul class="feeds list-items">
+                                <li>
+                                    <div class="col1">
+                                        <div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-info">
+                                                    <i class="fa fa-info"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Fixed some bugs
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-success">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Integration exception of mistakes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+							<h3 class="list-heading">
+								<i class="fa fa-database"></i> 
+								v1.0.0.0 for Oracle
+								<div class="label label-sm label-danger">
+									<span class="date">
+										<i class="fa fa-database"></i>
+										29/12/2015
+									</span>
+								</div>
+							</h3>
                             <ul class="feeds list-items">
                                 <li>
                                     <div class="col1">
@@ -1749,11 +1810,11 @@
     <script>
         function Download(version) {
             switch (version) {
-                case "1.0.0.0":
-                    window.open("dist/1.0.0.0 Oracle.zip");
-                    break;
                 case "LatestOracle":
                     window.open("dist/Latest Version Oracle.zip");
+                    break;
+				default:
+                    window.open("dist/" + version + ".zip");
                     break;
             }
         }
