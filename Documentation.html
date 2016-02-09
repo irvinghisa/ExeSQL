@@ -192,8 +192,16 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exsptbl">Tables</a></td>
+                                                            <td>Variable that contains the tables of the inquiry. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspval">Values</a></td>
+                                                            <td>Variable that contains the array of parameter names with its output value. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspds">ds</a></td>
-                                                            <td>Variable that contains the records of the inquiry.</td>
+                                                            <td>Variable that contains the records of the inquiry. <code>Removed since the version 1.0.1.5</code></td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exsperr">err</a></td>
@@ -216,35 +224,79 @@
                                                     <tbody>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspge1">Get(string)</a></td>
-                                                            <td>Who executes the stored procedure execute a query, no need input parameters.</td>
+                                                            <td>Executes the stored procedure execute a query, no need input parameters.</td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspge2">Get(string[], string[], string)</a></td>
-                                                            <td>Who executes the stored procedure execute a query with the input parameters sent.</td>
+                                                            <td>Executes the stored procedure execute a query with the input parameters sent.</td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspge3">Get(List&lt;string&gt;, List&lt;string&gt;, string)</a></td>
+                                                            <td>Executes the stored procedure execute a query with the input parameters sent.  <code class="green">Added since the version 1.0.1.5</code></td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspgm1">GetM(string)</a></td>
-                                                            <td>Who executes the stored procedure that executes multiple queries, no need input parameters.</td>
+                                                            <td>Executes the stored procedure that executes multiple queries, no need input parameters.</td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspgm2">GetM(string[], string[], string)</a></td>
-                                                            <td>Who executes the stored procedure that executes multiple queries with the input parameters sent.</td>
+                                                            <td>Executes the stored procedure that executes multiple queries with the input parameters sent.</td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgm3">GetM(List&lt;string&gt;, List&lt;string&gt;, string)</a></td>
+                                                            <td>Executes the stored procedure that executes multiple queries with the input parameters sent. <code class="green">Added since the version 1.0.1.5</code></td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspgs">GetSet(string[], string[], string)</a></td>
-                                                            <td>Who executes the stored procedure that executes an insert, update and execute a query with the input parameters sent.</td>
+                                                            <td>Executes the stored procedure that executes an insert, update and execute a query with the input parameters sent.</td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgs2">GetSet(List&lt;string&gt;, List&lt;string&gt;, string)</a></td>
+                                                            <td>Executes the stored procedure that executes an insert, update and execute a query with the input parameters sent. <code class="green">Added since the version 1.0.1.5</code></td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspgsm">GetSetM(string[], string[], string)</a></td>
-                                                            <td>Who executes the stored procedure that executes an insert, update and execute multiple queries with the input parameters sent.</td>
+                                                            <td>Executes the stored procedure that executes an insert, update and execute multiple queries with the input parameters sent.</td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgsm2">GetSetM(List&lt;string&gt;, List&lt;string&gt;, string)</a></td>
+                                                            <td>Executes the stored procedure that executes an insert, update and execute multiple queries with the input parameters sent. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgvl">GetValue(string)</a></td>
+                                                            <td>Executes the stored procedure which returns the value indicated in the procedure that is stored in the variable values, no need input parameters. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgvl2">GetValue(string[], string[], string)</a></td>
+                                                            <td>Executes the stored procedure which returns the value indicated in the procedure that is stored in the variable values, with only input or input-output parameters. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgvl3">GetValue(List&lt;string&gt;, List&lt;string&gt;, string)</a></td>
+                                                            <td>Executes the stored procedure which returns the value indicated in the procedure that is stored in the variable values, with only input or input-output parameters. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgvls">GetValues(string)</a></td>
+                                                            <td>Executes the stored procedure which returns the values indicated in the procedure that is stored in the variable values, no need input parameters. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgvls2">GetValues(string[], string[], string)</a></td>
+                                                            <td>Executes the stored procedure which returns the values indicated in the procedure that is stored in the variable values, with only input or input-output parameters. <code class="green">Added since the version 1.0.1.5</code></td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspgvls3">GetValues(List&lt;string&gt;, List&lt;string&gt;, string)</a></td>
+                                                            <td>Executes the stored procedure which returns the values indicated in the procedure that is stored in the variable values, with only input or input-output parameters. <code class="green">Added since the version 1.0.1.5</code></td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspse1">Set(string)</a></td>
-                                                            <td>Who executes the stored procedure that executes an insert or an update or both.</td>
+                                                            <td>Executes the stored procedure that executes an insert or an update or both.</td>
                                                         </tr>
                                                         <tr>
                                                             <td><a class="" data-toggle="modal" data-target="#exspse2">Set(string[], string[], string)</a></td>
-                                                            <td>Who executes the stored procedure that executes an insert or an update or both, with the input parameters sent.</td>
+                                                            <td>Executes the stored procedure that executes an insert or an update or both, with the input parameters sent.</td>
+                                                        </tr>
+														<tr>
+                                                            <td><a class="" data-toggle="modal" data-target="#exspse3">Set(List&lt;string&gt;, List&lt;string&gt;, string)</a></td>
+                                                            <td>Executes the stored procedure that executes an insert or an update or both, with the input parameters sent. <code class="green">Added since the version 1.0.1.5</code></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -256,6 +308,9 @@
                                                         </li>
                                                         <li>
                                                             <a href="#exspvb" data-toggle="tab">VB</a>
+                                                        </li>
+														<li>
+                                                            <a href="#exsposp" data-toggle="tab">Oracle SP</a>
                                                         </li>
                                                     </ul>
                                                     <div class="tab-content" style="padding: 0;">
@@ -273,7 +328,10 @@
         <span style="color: #337AB7;">if</span>(ep.Get(proc))
         {
             <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">//Before v1.0.1.5</span>
             <span style="color: #337AB7;">var</span> dt = ep.ds.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #2AB4C0;">//Since v1.0.1.5</span>
+            <span style="color: #337AB7;">var</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
         }
         <span style="color: #337AB7;">else</span>
         {
@@ -297,7 +355,10 @@
         <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(strcon)
         <span style="color: #337AB7;">If</span> (ep.Get(proc)) <span style="color: #337AB7;">Then</span>
             <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">'Before v1.0.1.5</span>
             <span style="color: #337AB7;">Dim</span> dt = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #2AB4C0;">'Since v1.0.1.5</span>
+            <span style="color: #337AB7;">Dim</span> dt = ep.Tables(<span style="color: #C8D046;">0</span>)
         <span style="color: #337AB7;">Else</span>
             <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
             <span style="color: #337AB7;">Dim</span> error <span style="color: #337AB7;">As String</span> = ep.err
@@ -305,6 +366,17 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                                                        </div>
+														<div class="tab-pane" id="exsposp">
+                                                            <pre>
+<span style="color: #337AB7;">PROCEDURE </span> "NAME_STORE_PROCEDURE" (P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
 </pre>
                                                         </div>
                                                     </div>
@@ -349,16 +421,26 @@
                                 <li class="media" onclick="Download('LatestOracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
-                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.5 for Oracle</h4>
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.1.5 for Oracle</h4>
                                         <div class="media-heading-sub"> Final Release</div>
                                         <div class="label label-sm label-danger">
-                                            <span class="date"><i class="fa fa-database"></i>01/01/2016</span>
+                                            <span class="date"><i class="fa fa-database"></i>07/02/2016</span>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                             <h3 class="list-heading">Old Versions</h3>
                             <ul class="media-list list-items">
+								<li class="media" onclick="Download('1.0.0.5 Oracle');" >
+                                    <div class="media-status"></div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.5 for Oracle</h4>
+                                        <div class="media-heading-sub">Release 1.0.0.5</div>
+                                        <div class="label label-sm label-danger">
+                                            <span class="date"><i class="fa fa-database"></i>01/01/2016</span>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li class="media" onclick="Download('1.0.0.0 Oracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
@@ -374,6 +456,70 @@
                     </div>
                     <div class="tab-pane page-quick-sidebar-alerts" id="quick_sidebar_tab_2">
                         <div class="page-quick-sidebar-alerts-list">
+							<h3 class="list-heading">
+								<i class="fa fa-database"></i> 
+								v1.0.1.5 for Oracle
+								<div class="label label-sm label-danger">
+									<span class="date">
+										<i class="fa fa-database"></i>
+										07/02/2016
+									</span>
+								</div>
+							</h3>
+                            <ul class="feeds list-items">
+                                <li>
+                                    <div class="col1">
+                                        <div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-danger">
+                                                    <i class="fa fa-remove"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Removed variable DataSet ds, now is List&lt;DataTable&gt; Tables
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-info">
+                                                    <i class="fa fa-info"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Now detect client x64
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-success">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Added method for return value
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-success">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Added method for return values
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                             <h3 class="list-heading">
 								<i class="fa fa-database"></i> 
 								v1.0.0.5 for Oracle
@@ -669,7 +815,197 @@
             </div>
         </div>
     </div>
-    <div class="modal fade modal-scroll" id="exspds">
+    <div class="modal fade modal-scroll" id="exsptbl">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.Tables Property</h4>
+                </div>
+                <div class="modal-body">
+                    Variable that contains the tables of the consultations undertaken by the stored procedures implemented in the Get, GetM, GetSet, GetSetM, GetValue and GetValues methods.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public </span><span class="font-md" style="color: #1BA39C;">List</span>&lt;<span class="font-md" style="color: #1BA39C;">DataTable</span>&gt; <span class="font-md">Tables { </span><span class="font-md" style="color: #337AB7;">get</span><span class="font-md">; }</span>
+                        </p>
+                    </div>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exsptblcs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exsptblvb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exsptblosp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exsptblcs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(<span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>);
+        <span style="color: #337AB7;">if</span>(ep.Get(<span style="color: #E7505A;">"SPROCEDURE"</span>))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #1BA39C;">List</span>&lt;<span style="color: #1BA39C;">DataTable</span>&gt; dts = ep.Tables;
+            <span style="color: #1BA39C;">DataTable</span> dt = dts[<span style="color: #C8D046;">0</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> errormessage = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exsptblvb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(<span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>)
+        <span style="color: #337AB7;">If</span>(ep.Get(<span style="color: #E7505A;">"SPROCEDURE"</span>)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> dts <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #1BA39C;">DataTables</span>&gt; = ep.Tables;
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = dts(<span style="color: #C8D046;">0</span>);
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> errormessage <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exsptblosp">
+                                <pre>
+<span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade modal-scroll" id="exspval">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.Values Property</h4>
+                </div>
+                <div class="modal-body">
+                    Variable that contains the values of the consultations undertaken by the stored procedures implemented in GetValue and GetValues methods.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public </span><span class="font-md" style="color: #1BA39C;">Dictionary</span>&lt;<span class="font-md" style="color: #337AB7;">string</span>, <span class="font-md" style="color: #337AB7;">object</span>&gt; <span class="font-md">Values { </span><span class="font-md" style="color: #337AB7;">get</span><span class="font-md">; }</span>
+                        </p>
+                    </div>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspvalcs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspvalvb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspvalosp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspvalcs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(<span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>);
+        <span style="color: #337AB7;">if</span>(ep.Get(<span style="color: #E7505A;">"SPROCEDURE"</span>))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #1BA39C;">Object</span> val = ep.Values[<span style="color: #E7505A;">"P_PARAM1"</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> errormessage = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspvalvb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(<span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>)
+        <span style="color: #337AB7;">If</span>(ep.Get(<span style="color: #E7505A;">"SPROCEDURE"</span>)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #337AB7;">object</span> = ep.Values(<span style="color: #E7505A;">P_PARAM1</span>);
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> errormessage <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspvalosp">
+                                <pre>
+<span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">OUT NUMBER</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">SELECT</span> <span style="color: #1BA39C;">2016</span>
+    <span style="color: #337AB7;">INTO</span> P_PARAM1
+    <span style="color: #337AB7;">FROM</span> DUAL;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade modal-scroll" id="exspds">
         <div class="modal-dialog modal-lg">
             <div class="modal-content c-square">
                 <div class="modal-header">
@@ -677,6 +1013,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h4 class="modal-title bold uppercase">ExecProcedures.ds Property</h4>
+					<code>Removed since the version 1.0.1.5</code>
                 </div>
                 <div class="modal-body">
                     Variable that contains the result of the consultations undertaken by the stored procedures implemented in the Get, GetM, GetSet and GetSetM methods.
@@ -940,6 +1277,9 @@
                             <li>
                                 <a href="#exspg1vb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspg1osp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspg1cs">
@@ -956,7 +1296,10 @@
         <span style="color: #337AB7;">if</span>(ep.Get(storproc))
         {
             <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">//Before v1.0.1.5</span>
             <span style="color: #1BA39C;">DataTable</span> dt = ep.ds.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #2AB4C0;">//Since v1.0.1.5</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
         }
         <span style="color: #337AB7;">else</span>
         {
@@ -979,7 +1322,10 @@
         <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
         <span style="color: #337AB7;">If</span>(ep.Get(storproc)) <span style="color: #337AB7;">Then</span>
             <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">'Before v1.0.1.5</span>
             <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #2AB4C0;">'Since v1.0.1.5</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
         <span style="color: #337AB7;">Else</span>
             <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
             <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
@@ -987,6 +1333,16 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspg1osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
 </pre>
                             </div>
                         </div>
@@ -1055,6 +1411,9 @@
                             <li>
                                 <a href="#exspg2vb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspg2osp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspg2cs">
@@ -1073,7 +1432,10 @@
         <span style="color: #337AB7;">if</span>(ep.Get(names, values, storproc))
         {
             <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">//Before v1.0.1.5</span>
             <span style="color: #1BA39C;">DataTable</span> dt = ep.ds.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #2AB4C0;">//Since v1.0.1.5</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
         }
         <span style="color: #337AB7;">else</span>
         {
@@ -1098,6 +1460,9 @@
         <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
         <span style="color: #337AB7;">If</span>(ep.Get(names, values, storproc)) <span style="color: #337AB7;">Then</span>
             <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">'Before v1.0.1.5</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #2AB4C0;">'Since v1.0.1.5</span>
             <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
         <span style="color: #337AB7;">Else</span>
             <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
@@ -1106,6 +1471,151 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspg2osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME
+        <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM1;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade modal-scroll" id="exspge3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.Get Method (List&lt;string&gt;, List&lt;string&gt;, string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Execute the stored procedure specified with the arrangements of the names of the input parameters with its value determined performing a query result is stored in an internal variable and the method returns true if the procedure was successful.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">Get(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the names of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the values of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspg3cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspg3vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspg3osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspg3cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; names = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> };
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; values = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString(), <span style="color: #337AB7;">null</span> };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.Get(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspg3vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #337AB7;">null</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.Get(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspg3osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME
+        <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM1;
+<span style="color: #337AB7;">END</span>
 </pre>
                             </div>
                         </div>
@@ -1162,6 +1672,9 @@
                             <li>
                                 <a href="#exspgm1vb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspgm1osp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspgm1cs">
@@ -1178,8 +1691,12 @@
         <span style="color: #337AB7;">if</span>(ep.GetM(storproc))
         {
             <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">//Before v1.0.1.5</span>
             <span style="color: #1BA39C;">DataTable</span> dt = ep.ds.Tables[<span style="color: #C8D046;">0</span>];
             <span style="color: #1BA39C;">DataTable</span> dt2 = ep.ds.Tables[<span style="color: #C8D046;">1</span>];
+            <span style="color: #2AB4C0;">//Since v1.0.1.5</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt2 = ep.Tables[<span style="color: #C8D046;">1</span>];
         }
         <span style="color: #337AB7;">else</span>
         {
@@ -1202,8 +1719,12 @@
         <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
         <span style="color: #337AB7;">If</span>(ep.GetM(storproc)) <span style="color: #337AB7;">Then</span>
             <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">'Before v1.0.1.5</span>
             <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
             <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">1</span>)
+            <span style="color: #2AB4C0;">'Since v1.0.1.5</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">1</span>)
         <span style="color: #337AB7;">Else</span>
             <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
             <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
@@ -1211,6 +1732,20 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgm1osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>, P_DATA2 <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA2 <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
 </pre>
                             </div>
                         </div>
@@ -1279,6 +1814,9 @@
                             <li>
                                 <a href="#exspgm2vb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspgm2osp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspgm2cs">
@@ -1297,8 +1835,12 @@
         <span style="color: #337AB7;">if</span>(ep.GetM(names, values, storproc))
         {
             <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">//Before v1.0.1.5</span>
             <span style="color: #1BA39C;">DataTable</span> dt = ep.ds.Tables[<span style="color: #C8D046;">0</span>];
             <span style="color: #1BA39C;">DataTable</span> dt2 = ep.ds.Tables[<span style="color: #C8D046;">1</span>];
+            <span style="color: #2AB4C0;">//Since v1.0.1.5</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt2 = ep.Tables[<span style="color: #C8D046;">1</span>];
         }
         <span style="color: #337AB7;">else</span>
         {
@@ -1323,8 +1865,12 @@
         <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
         <span style="color: #337AB7;">If</span>(ep.GetM(names, values, storproc)) <span style="color: #337AB7;">Then</span>
             <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">'Before v1.0.1.5</span>
             <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
             <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">1</span>)
+            <span style="color: #2AB4C0;">'Since v1.0.1.5</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">1</span>)
         <span style="color: #337AB7;">Else</span>
             <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
             <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
@@ -1332,6 +1878,163 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgm2osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>, P_DATA2 <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME
+        <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM2;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA2 <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME
+        <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM1;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade modal-scroll" id="exspgm3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetM Method (List&lt;string&gt;, List&lt;string&gt;, string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Execute the stored procedure specified with the arrangements of the names of the input parameters with its value determined performing multiple queries result is stored in an internal variable and the method returns true if the procedure was successful.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetM(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the names of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the values of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgm3cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgm3vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgm3osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgm3cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; names = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> };
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; values = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString(), <span style="color: #337AB7;">null</span> };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetM(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt2 = ep.Tables[<span style="color: #C8D046;">1</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgm3vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #337AB7;">null</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetM(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">1</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgm3osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>, P_DATA2 <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME
+        <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM2;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA2 <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME
+        <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM1;
+<span style="color: #337AB7;">END</span>
 </pre>
                             </div>
                         </div>
@@ -1400,6 +2103,9 @@
                             <li>
                                 <a href="#exspgsvb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspgsosp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspgscs">
@@ -1418,7 +2124,10 @@
         <span style="color: #337AB7;">if</span>(ep.GetSet(names, values, storproc))
         {
             <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">//Before v1.0.1.5</span>
             <span style="color: #1BA39C;">DataTable</span> dt = ep.ds.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #2AB4C0;">//Since v1.0.1.5</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
         }
         <span style="color: #337AB7;">else</span>
         {
@@ -1443,7 +2152,10 @@
         <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
         <span style="color: #337AB7;">If</span>(ep.GetSet(names, values, storproc)) <span style="color: #337AB7;">Then</span>
             <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">'Before v1.0.1.5</span>
             <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #2AB4C0;">'Since v1.0.1.5</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
         <span style="color: #337AB7;">Else</span>
             <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
             <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
@@ -1451,6 +2163,157 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgsosp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">INSERT INTO </span> TABLE_NAME(NAME_COLUMN) <span style="color: #337AB7;">VALUES</span> (P_PARAM1);
+	
+    <span style="color: #337AB7;">UPDATE </span> TABLE_NAME <span style="color: #337AB7;">SET</span> NAME_COLUMN = P_PARAM2 <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM3;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-scroll" id="exspgs2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetSet Method (List&lt;string&gt;, List&lt;string&gt;, string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Execute the stored procedure specified with the arrangements of the names of the input parameters with its value determined which inserts, updates, or both and makes a query stored in an internal variable and the method returns true if the procedure it was successful.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetSet(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the names of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the values of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgs2cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgs2vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgs2osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgs2cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; names = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> };
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; values = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString(), <span style="color: #337AB7;">null</span> };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetSet(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgs2vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #337AB7;">null</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetSet(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgs2osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">INSERT INTO </span> TABLE_NAME(NAME_COLUMN) <span style="color: #337AB7;">VALUES</span> (P_PARAM1);
+	
+    <span style="color: #337AB7;">UPDATE </span> TABLE_NAME <span style="color: #337AB7;">SET</span> NAME_COLUMN = P_PARAM2 <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM3;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
 </pre>
                             </div>
                         </div>
@@ -1519,6 +2382,9 @@
                             <li>
                                 <a href="#exspgsmvb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspgsmosp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspgsmcs">
@@ -1537,8 +2403,12 @@
         <span style="color: #337AB7;">if</span>(ep.GetSetM(names, values, storproc))
         {
             <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">//Before v1.0.1.5</span>
             <span style="color: #1BA39C;">DataTable</span> dt = ep.ds.Tables[<span style="color: #C8D046;">0</span>];
             <span style="color: #1BA39C;">DataTable</span> dt2 = ep.ds.Tables[<span style="color: #C8D046;">1</span>];
+            <span style="color: #2AB4C0;">//Since v1.0.1.5</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt2 = ep.Tables[<span style="color: #C8D046;">1</span>];
         }
         <span style="color: #337AB7;">else</span>
         {
@@ -1563,8 +2433,12 @@
         <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
         <span style="color: #337AB7;">If</span>(ep.GetSetM(constr, names, values, storproc)) <span style="color: #337AB7;">Then</span>
             <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #2AB4C0;">'Before v1.0.1.5</span>
             <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">0</span>)
             <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.ds.Tables(<span style="color: #C8D046;">1</span>)
+            <span style="color: #2AB4C0;">'Since v1.0.1.5</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">1</span>)
         <span style="color: #337AB7;">Else</span>
             <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
             <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
@@ -1572,6 +2446,963 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgsmosp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>, P_DATA2 <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">INSERT INTO </span> TABLE_NAME(NAME_COLUMN) <span style="color: #337AB7;">VALUES</span> (P_PARAM1);
+	
+    <span style="color: #337AB7;">UPDATE </span> TABLE_NAME <span style="color: #337AB7;">SET</span> NAME_COLUMN = P_PARAM2 <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM3;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA2 <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-scroll" id="exspgsm2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetSetM Method (List&lt;string&gt;, List&lt;string&gt;, string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Execute the stored procedure specified with the arrangements of the names of the input parameters with its value determined which inserts, updates, or both and makes multiple queries stored in an internal variable and the method returns true if the procedure it was successful.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetSetM(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the names of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the values of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgsm2cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgsm2vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgsm2osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgsm2cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; names = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> };
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; values = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString(), <span style="color: #337AB7;">null</span> };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetSetM(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt2 = ep.Tables[<span style="color: #C8D046;">1</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgsm2vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #337AB7;">null</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetSetM(constr, names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+            <span style="color: #337AB7;">Dim</span> dt2 <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">1</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgsm2osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>, P_DATA2 <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">INSERT INTO </span> TABLE_NAME(NAME_COLUMN) <span style="color: #337AB7;">VALUES</span> (P_PARAM1);
+	
+    <span style="color: #337AB7;">UPDATE </span> TABLE_NAME <span style="color: #337AB7;">SET</span> NAME_COLUMN = P_PARAM2 <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM3;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+		
+    <span style="color: #337AB7;">OPEN</span> P_DATA2 <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT</span> * 
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-scroll" id="exspgvl">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetValue Method (string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Executes the stored procedure which returns the value indicated in the procedure that is stored in the variable values, no need input parameter and the method returns true if the procedure was successful.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetValue(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgvlcs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgvlvb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgvlosp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgvlcs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetValue(storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">object</span> val = ep.Values[<span style="color: #E7505A;">"P_PARAM"</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgvlvb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetValue(storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> val <span style="color: #337AB7;">As Object</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM"</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgvlosp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM <span style="color: #337AB7;">OUT NUMBER</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">SELECT </span><span style="color: #C8D046;">2016</span>
+    <span style="color: #337AB7;">INTO </span>P_PARAM
+    <span style="color: #337AB7;">FROM DUAL</span>;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-scroll" id="exspgvl2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetValue Method (string[], string[], string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Executes the stored procedure which returns the value indicated in the procedure that is stored in the variable values, with only input or input-output parameters and returns true if the procedure was successful. It also allows the return of Cursor´s regardless of the return value.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetValue(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span>[] namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span>[] valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #337AB7;">string</span>[]</td>
+                                <td>Variable with the names of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #337AB7;">string</span>[]</td>
+                                <td>Variable with the values of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgvl2cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgvl2vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgvl2osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgvl2cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #337AB7;">string</span>[] names = <span style="color: #337AB7;">new string</span>[] { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> };
+        <span style="color: #337AB7;">string</span>[] values = <span style="color: #337AB7;">new string</span>[] { (<span style="color: #C8D046;">5</span>).ToString(), <span style="color: #E7505A;">"STRING"</span> };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetValue(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">string</span> val = ep.Values[<span style="color: #E7505A;">"P_PARAM2"</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgvl2vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As String</span>() = <span style="color: #337AB7;">new string</span>() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As String</span>() = <span style="color: #337AB7;">new string</span>() { (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #E7505A;">"STRING"</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetValue(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> val <span style="color: #337AB7;">As String</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM2"</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgvl2osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM2 <span style="color: #337AB7;">IN OUT VARCHAR2</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">SELECT </span> NAME_COLUMN 
+    <span style="color: #337AB7;">INTO</span> P_PARAM2
+    <span style="color: #337AB7;">FROM</span> TABLE_NAME
+	<span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM2
+	<span style="color: #337AB7;">AND</span> COLUMN_NAME = P_PARAM1;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade modal-scroll" id="exspgvl3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetValue Method (List&lt;string&gt;, List&lt;string&gt;, string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Executes the stored procedure which returns the value indicated in the procedure that is stored in the variable values, with only input or input-output parameters and the method returns true if the procedure was successful. It also allows the return of Cursor´s regardless of the return value.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetValue(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the names of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the values of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgvl3cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgvl3vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgvl3osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgvl3cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; names = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> };
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; values = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString() };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetValue(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">decimal</span> val = ep.Values[<span style="color: #E7505A;">"P_PARAM2"</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>]
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgvl3vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetValue(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> val <span style="color: #337AB7;">As Decimal</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM2"</span>)
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgvl3osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN OUT NUMBER</span>, P_DATA <span style="color: #337AB7;">OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">SELECT </span> COLUMN_NAME 
+    <span style="color: #337AB7;">INTO</span> P_PARAM2
+    <span style="color: #337AB7;">FROM</span> TABLE_NAME
+    <span style="color: #337AB7;">WEHRE</span> COLUMN_NAME = P_PARAM1
+    <span style="color: #337AB7;">AND</span> COLUMN_NAME = P_PARAM2;
+	
+    <span style="color: #337AB7;">OPEN </span> P_DATA <span style="color: #337AB7;">FOR</span> 
+        <span style="color: #337AB7;">SELECT </span> *
+        <span style="color: #337AB7;">FROM</span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-scroll" id="exspgvls">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetValues Method (string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Executes the stored procedure which returns the values indicated in the procedure that is stored in the variable values, no need input parameter and the method returns true if the procedure was successful.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetValues(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgvlscs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgvlsvb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgvlsosp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgvlscs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetValues(storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">object</span> val = ep.Values[<span style="color: #E7505A;">"P_PARAM"</span>];
+            <span style="color: #337AB7;">object</span> val2 = ep.Values[<span style="color: #E7505A;">"P_PARAM2"</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgvlsvb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetValues(storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> val <span style="color: #337AB7;">As Object</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM"</span>)
+            <span style="color: #337AB7;">Dim</span> val2 <span style="color: #337AB7;">As Object</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM2"</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgvlsosp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM <span style="color: #337AB7;">OUT NUMBER</span>, P_PARAM2 <span style="color: #337AB7;">OUT VARCHAR2</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">SELECT </span><span style="color: #C8D046;">2016</span>, <span style="color: #E7505A;">"Hellow World!"</span>
+    <span style="color: #337AB7;">INTO </span>P_PARAM, P_PARAM2
+    <span style="color: #337AB7;">FROM DUAL</span>;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-scroll" id="exspgvls2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetValues Method (string[], string[], string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Executes the stored procedure which returns the values indicated in the procedure that is stored in the variable values, with only input or input-output parameters and returns true if the procedure was successful. It also allows the return of Cursor´s regardless of the return value.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetValues(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span>[] namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span>[] valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #337AB7;">string</span>[]</td>
+                                <td>Variable with the names of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #337AB7;">string</span>[]</td>
+                                <td>Variable with the values of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgvls2cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgvls2vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgvls2osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgvls2cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #337AB7;">string</span>[] names = <span style="color: #337AB7;">new string</span>[] { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> };
+        <span style="color: #337AB7;">string</span>[] values = <span style="color: #337AB7;">new string</span>[] { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString() };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetValues(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">string</span> val = ep.Values[<span style="color: #E7505A;">"P_PARAM1"</span>];
+            <span style="color: #337AB7;">decimal</span> val2 = ep.Values[<span style="color: #E7505A;">"P_PARAM3"</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>];
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgvls2vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As String</span>() = <span style="color: #337AB7;">new string</span>() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As String</span>() = <span style="color: #337AB7;">new string</span>() { (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #E7505A;">"STRING"</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetValues(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> val <span style="color: #337AB7;">As String</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM2"</span>)
+            <span style="color: #337AB7;">Dim</span> val2 <span style="color: #337AB7;">As Decimal</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM3"</span>)
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgvls2osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM2 <span style="color: #337AB7;">IN OUT VARCHAR2</span>, P_PARAM3 <span style="color: #337AB7;">OUT NUMBER</span>, P_DATA <span style="color: #337AB7;">IN OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">SELECT </span> NAME_COLUMN, NAME_COLUMN
+    <span style="color: #337AB7;">INTO</span> P_PARAM2, P_PARAM3
+    <span style="color: #337AB7;">FROM</span> TABLE_NAME
+	<span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM1;
+	
+    <span style="color: #337AB7;">OPEN </span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT </span> *
+        <span style="color: #337AB7;">FROM </span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade modal-scroll" id="exspgvls3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.GetValues Method (List&lt;string&gt;, List&lt;string&gt;, string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Executes the stored procedure which returns the values indicated in the procedure that is stored in the variable values, with only input or input-output parameters and the method returns true if the procedure was successful. It also allows the return of Cursor´s regardless of the return value.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">GetValues(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the names of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the values of the input or input-output parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspgvls3cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspgvls3vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspgvls3osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspgvls3cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; names = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> };
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; values = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { (<span style="color: #C8D046;">5</span>).ToString(), <span style="color: #E7505A;">"STRING"</span> };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.GetValues(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">string</span> val = ep.Values[<span style="color: #E7505A;">"P_PARAM2"</span>];
+            <span style="color: #337AB7;">decimal</span> val2 = ep.Values[<span style="color: #E7505A;">"P_PARAM3"</span>];
+            <span style="color: #1BA39C;">DataTable</span> dt = ep.Tables[<span style="color: #C8D046;">0</span>]
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspgvls3vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #E7505A;">"STRING"</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.GetValues(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+            <span style="color: #337AB7;">Dim</span> val <span style="color: #337AB7;">As String</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM2"</span>)
+            <span style="color: #337AB7;">Dim</span> val2 <span style="color: #337AB7;">As Decimal</span> = ep.Values(<span style="color: #E7505A;">"P_PARAM3"</span>)
+            <span style="color: #337AB7;">Dim</span> dt <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">DataTable</span> = ep.Tables(<span style="color: #C8D046;">0</span>)
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspgvls3osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM2 <span style="color: #337AB7;">IN OUT VARCHAR2</span>, P_PARAM3 <span style="color: #337AB7;">OUT NUMBER</span>, P_DATA <span style="color: #337AB7;">IN OUT SYS_REFCURSOR</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">SELECT </span> NAME_COLUMN, NAME_COLUMN
+    <span style="color: #337AB7;">INTO</span> P_PARAM2, P_PARAM3
+    <span style="color: #337AB7;">FROM</span> TABLE_NAME
+	<span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM1;
+	
+    <span style="color: #337AB7;">OPEN </span> P_DATA <span style="color: #337AB7;">FOR</span>
+        <span style="color: #337AB7;">SELECT </span> *
+        <span style="color: #337AB7;">FROM </span> TABLE_NAME;
+<span style="color: #337AB7;">END</span>
 </pre>
                             </div>
                         </div>
@@ -1628,6 +3459,9 @@
                             <li>
                                 <a href="#exspse1vb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspse1osp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspse1cs">
@@ -1673,6 +3507,16 @@
     <span style="color: #337AB7;">End Sub</span>
 
 <span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspse1osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE"
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">INSERT INTO </span> TABLE_NAME(NAME_COLUMN) <span style="color: #337AB7;">VALUES</span> (<span style="color: #C8D046;">2016</span>);
+	
+    <span style="color: #337AB7;">UPDATE </span> TABLE_NAME <span style="color: #337AB7;">SET</span> NAME_COLUMN = <span style="color: #E7505A;">"Hello World!"</span> <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = <span style="color: #C8D046;">16</span>;
+<span style="color: #337AB7;">END</span>
 </pre>
                             </div>
                         </div>
@@ -1741,6 +3585,9 @@
                             <li>
                                 <a href="#exspse2vb" data-toggle="tab">VB</a>
                             </li>
+							<li>
+                                <a href="#exspse2osp" data-toggle="tab">Oracle SP</a>
+                            </li>
                         </ul>
                         <div class="tab-content" style="padding: 0;">
                             <div class="tab-pane active" id="exspse2cs">
@@ -1792,6 +3639,16 @@
 <span style="color: #337AB7;">End Module</span>
 </pre>
                             </div>
+							<div class="tab-pane" id="exspse2osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">INSERT INTO </span> TABLE_NAME(NAME_COLUMN) <span style="color: #337AB7;">VALUES</span> (P_PARAM1);
+	
+    <span style="color: #337AB7;">UPDATE </span> TABLE_NAME <span style="color: #337AB7;">SET</span> NAME_COLUMN = P_PARAM2 <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM3;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1801,7 +3658,138 @@
             </div>
         </div>
     </div>
-    <!--[if lt IE 9]>
+	<div class="modal fade modal-scroll" id="exspse3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content c-square">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title bold uppercase">ExecProcedures.Set Method (List&lt;string&gt;, List&lt;string&gt;, string)</h4>
+					<code class="green">Added since the version 1.0.1.5</code>
+                </div>
+                <div class="modal-body">
+                    Execute the stored procedure specified with the arrangements of the names of the input parameters with its value determined which inserts, updates, or both but does not perform any queries and the method returns true if the procedure was successful.
+                    <h3>Syntax</h3>
+                    <div class="note note-info">
+                        <p>
+                            <span class="font-md" style="color: #337AB7;">public bool </span><span class="font-md">Set(<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; namesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; valuesparams,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #337AB7;">string</span> storproc<br />
+                            )</span>
+                        </p>
+                    </div>
+                    <h3>Parameters</h3>
+                    <table class="table table-striped table-bordered table-advance">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>namesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the names of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>valuesparams</td>
+                                <td><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;</td>
+                                <td>Variable with the values of the input parameters.</td>
+                            </tr>
+                            <tr>
+                                <td>storproc</td>
+                                <td><span style="color: #337AB7;">string</span></td>
+                                <td>Variable that contains the name of the procedure to execute.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Examples</h3>
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#exspse3cs" data-toggle="tab">C#</a>
+                            </li>
+                            <li>
+                                <a href="#exspse3vb" data-toggle="tab">VB</a>
+                            </li>
+							<li>
+                                <a href="#exspse3osp" data-toggle="tab">Oracle SP</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" style="padding: 0;">
+                            <div class="tab-pane active" id="exspse3cs">
+                                <pre>
+<span style="color: #337AB7;">using</span> ExeSQL;
+
+<span style="color: #337AB7;">class</span> ConsoleApplication
+{
+    <span style="color: #337AB7;">static void</span> Main()
+    {
+        <span style="color: #337AB7;">string</span> constr = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>;
+        <span style="color: #337AB7;">string</span> storproc = <span style="color: #E7505A;">"SPROCEDURE"</span>;
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; names = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> };
+        <span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; values = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString(), <span style="color: #337AB7;">null</span> };
+        <span style="color: #1BA39C;">ExecProcedures</span> ep = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr);
+        <span style="color: #337AB7;">if</span>(ep.Set(names, values, storproc))
+        {
+            <span style="color: #2AB4C0;">//Code we use when execution of the procedure is successful</span>
+        }
+        <span style="color: #337AB7;">else</span>
+        {
+            <span style="color: #2AB4C0;">//Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">string</span> err = ep.err;
+        }
+    }
+}
+</pre>
+                            </div>
+                            <div class="tab-pane" id="exspse3vb">
+                                <pre>
+<span style="color: #337AB7;">Imports</span> ExeSQL
+
+<span style="color: #337AB7;">Module</span> ConsoleApplication
+    
+    <span style="color: #337AB7;">Sub</span> Main()
+        <span style="color: #337AB7;">Dim</span> constr <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;"</span>
+        <span style="color: #337AB7;">Dim</span> storproc <span style="color: #337AB7;">As String</span> = <span style="color: #E7505A;">"SPROCEDURE"</span>
+        <span style="color: #337AB7;">Dim</span> names <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"P_PARAM1"</span>, <span style="color: #E7505A;">"P_PARAM2"</span>, <span style="color: #E7505A;">"P_PARAM3"</span> }
+        <span style="color: #337AB7;">Dim</span> values <span style="color: #337AB7;">As </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt; = <span style="color: #337AB7;">new </span><span style="color: #1BA39C;">List</span>&lt;<span style="color: #337AB7;">string</span>&gt;() { <span style="color: #E7505A;">"STRING"</span>, (<span style="color: #C8D046;">5</span>).ToString, <span style="color: #337AB7;">null</span> }
+        <span style="color: #337AB7;">Dim</span> ep <span>As</span> <span style="color: #1BA39C;">ExecProcedures</span> = <span style="color: #337AB7;">new</span> <span style="color: #1BA39C;">ExecProcedures</span>(constr)
+        <span style="color: #337AB7;">If</span>(ep.Set(names, values, storproc)) <span style="color: #337AB7;">Then</span>
+            <span style="color: #2AB4C0;">'Code we use when execution of the procedure is successful</span>
+        <span style="color: #337AB7;">Else</span>
+            <span style="color: #2AB4C0;">'Code used when implementing the procedure fails</span>
+            <span style="color: #337AB7;">Dim</span> err <span style="color: #337AB7;">As String</span> = ep.err
+        <span style="color: #337AB7;">End If</span>
+    <span style="color: #337AB7;">End Sub</span>
+
+<span style="color: #337AB7;">End Module</span>
+</pre>
+                            </div>
+							<div class="tab-pane" id="exspse3osp">
+                                <pre><span style="color: #337AB7;">PROCEDURE </span> "SPROCEDURE" (P_PARAM1 <span style="color: #337AB7;">IN VARCHAR2</span>, P_PARAM2 <span style="color: #337AB7;">IN NUMBER</span>, P_PARAM3 <span style="color: #337AB7;">IN DECIMAL</span>)
+<span style="color: #337AB7;">AS</span>
+<span style="color: #337AB7;">BEGIN</span>
+    <span style="color: #337AB7;">INSERT INTO </span> TABLE_NAME(NAME_COLUMN) <span style="color: #337AB7;">VALUES</span> (P_PARAM1);
+	
+    <span style="color: #337AB7;">UPDATE </span> TABLE_NAME <span style="color: #337AB7;">SET</span> NAME_COLUMN = P_PARAM2 <span style="color: #337AB7;">WHERE</span> COLUMN_NAME = P_PARAM3;
+<span style="color: #337AB7;">END</span>
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline red sbold uppercase" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--[if lt IE 9]>
         <script src="Scripts/respond.min.js"></script>
         <script src="Scripts/excanvas.min.js"></script>
     <![endif]-->
@@ -1827,5 +3815,12 @@
             }
         }
     </script>
+	<style>
+		code.green 
+		{
+			color: #218C1B;
+			background-color: #F2F9F2;
+		}
+	</style>
 </body>
 </html>
