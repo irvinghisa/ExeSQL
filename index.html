@@ -1,16 +1,16 @@
 ﻿<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if IE 8]> <html lang="es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="es" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="es">
 <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>ExeSQL | Library for .Net</title>
+    <title>ExeSQL | Libreria para .Net</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Library for .Net for client database" name="description" />
-    <meta content="Irving Hinojos" name="author" />
+    <meta content="Libreria para .Net para clientes de base de datos" name="description" />
+    <meta content="Ing. Irving Hinojos" name="author" />
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="Content/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -44,24 +44,37 @@
                 <ul class="nav navbar-nav">
                     <li class="classic-menu-dropdown active">
                         <a href="index.html">
-                            Home
+                            Inicio
                             <span class="selected"> </span>
                         </a>
                     </li>
                     <li class="classic-menu-dropdown">
                         <a href="Documentation.html">
-                            Documentation
+                            Documentación
                         </a>
                     </li>
 					<li class="classic-menu-dropdown">
                         <a href="About.html">
-                            About
+                            Acerca de
                         </a>
                     </li>
                     <li class="classic-menu-dropdown">
                         <a href="javascript:;" class="page-quick-sidebar-toggler2">
-                            Downloads
+                            Descargas
                         </a>
+                    </li>
+					<li class="classic-menu-dropdown dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                            Lenguaje
+                        </a>
+						<ul class="dropdown-menu">
+							<li class="external">
+								<a href="">Español</a>
+							</li>
+							<li class="external">
+								<a href="en/">English</a>
+							</li>
+						</ul>
                     </li>
                 </ul>
             </div>
@@ -85,24 +98,41 @@
                     <ul class="page-sidebar-menu visible-sm visible-xs  page-header-fixed">
                         <li class="nav-item start active open" >
                             <a href="index.html" class="nav-link nav-toggle">
-                                Home
+                                Inicio
                                 <span class="selected"> </span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="Documentation.html" class="nav-link nav-toggle">
-                                Documentation
+                                Documentación
                             </a>
                         </li>
 						<li class="nav-item">
 							<a href="About.html">
-								About
+								Acerca de
 							</a>
 						</li>
                         <li class="nav-item">
                             <a href="javascript:;" class="page-quick-sidebar-toggler2">
-                                Downloads
+                                Descargas
                             </a>
+                        </li>
+						<li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                Lenguaje
+                            </a>
+							<ul class="sub-menu">
+								<li class="nav-item">
+									<a href="" class="nav-link">
+										<span class="title">Español</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="en/" class="nav-link">
+										<span class="title">English</span>
+									</a>
+								</li>
+							</ul>
                         </li>
                     </ul>
                 </div>
@@ -113,13 +143,13 @@
                 <div class="page-bar">
                     <ul class="page-breadcrumb">
                         <li>
-                            <span>Home</span>
+                            <span>Inicio</span>
                         </li>
                     </ul>
                 </div>
                 <h3 class="page-title">
                     ExeSQL
-                    <small>Library for .Net for client of database</small>
+                    <small>Libreria para .Net para clientes de base de datos</small>
                 </h3>
                 <div class="row">
                     <div class="col-md-5 col-sm-5">
@@ -127,8 +157,8 @@
                             <div class="portlet-title">
                                 <div class="caption">
                                     <i class="fa fa-info-circle font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">About</span>
-                                    <span class="caption-helper">this library</span>
+                                    <span class="caption-subject font-green bold uppercase">Acerca</span>
+                                    <span class="caption-helper">de esta libreria</span>
                                 </div>
                                 <div class="actions">
                                     <div class="btn-group btn-group-devided" data-toggle="buttons">
@@ -137,7 +167,7 @@
                                 </div>
                             </div>
                             <div class="portlet-body">
-                                This library was created to facilitate the execution of SQL statements for different types of databases which are still working on this project to enhance its functionality.
+                                Esta biblioteca se creó para facilitar la ejecución de sentencias SQL para diferentes tipos de bases de datos que todavía están trabajando en este proyecto para mejorar su funcionalidad.
                             </div>
                         </div>
                     </div>
@@ -145,9 +175,9 @@
                         <div class="portlet light bordered">
                             <div class="portlet-title">
                                 <div class="caption">
-                                    <i class="fa fa-question font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">Why</span>
-                                    <span class="caption-helper">this library</span>
+                                    <i class="fa fa-question font-green fa-rotate-180"></i>
+                                    <span class="caption-subject font-green bold uppercase">Porqué</span>
+                                    <span class="caption-helper">esta libreria?</span>
                                 </div>
                                 <div class="actions">
                                     <div class="btn-group btn-group-devided" data-toggle="buttons">
@@ -156,7 +186,7 @@
                                 </div>
                             </div>
                             <div class="portlet-body">
-                                Why use this library? They have to ask the answer is simple, the library allows the execution of judgments on any computer regardless of the client version that you have installed, so this also helps teams work because it is not necessary for everyone the same version of the client to execute the statements.
+                                ¿Por qué utilizar esta libreria? La respuesta es muy simple, la libreria permite la ejecución de sentencias en cualquier computadora sin importar la versión del cliente que tengan instalado, así que esto ayuda a los equipos de trabajar porque no es necesario que tengan la misma versión del cliente para ejecutar las sentencias de SQL.
                             </div>
                         </div>
                     </div>
@@ -167,8 +197,7 @@
                             <div class="portlet-title">
                                 <div class="caption">
                                     <i class="fa fa-envelope font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">Contact</span>
-                                    <span class="caption-helper">me</span>
+                                    <span class="caption-subject font-green bold uppercase">Contactanos</span>
                                 </div>
                                 <div class="actions">
                                     <div class="btn-group btn-group-devided" data-toggle="buttons">
@@ -177,7 +206,7 @@
                                 </div>
                             </div>
                             <div class="portlet-body">
-                                Please make your visit to this small library that I hope will be very useful if you have a suggestion or anything you want to say you can contact me by email <b>irving.h.s@hotmail.com</b>, all comments will be reviewed and taken into consideration.
+                                Gracias por hacer su visita a esta pequeña libreria que espero les sea muy útil, si tiene alguna sugerencia o comentario o algo que quieran decir pueden enviarla a la siguiente direccion de correo electrónico <b>irving.h.s@hotmail.com</b>, todos los comentarios serán revisados y tomados en consideración.
                             </div>
                         </div>
                     </div>
@@ -186,8 +215,8 @@
                             <div class="portlet-title">
                                 <div class="caption">
                                     <i class="fa fa-comment font-green"></i>
-                                    <span class="caption-subject font-green bold uppercase">Comment</span>
-                                    <span class="caption-helper">for you</span>
+                                    <span class="caption-subject font-green bold uppercase">Comentario</span>
+                                    <span class="caption-helper">para ustedes</span>
                                 </div>
                                 <div class="actions">
                                     <div class="btn-group btn-group-devided" data-toggle="buttons">
@@ -196,7 +225,7 @@
                                 </div>
                             </div>
                             <div class="portlet-body">
-                                Like any project is in its initial stage released the 1.0 version for your enjoyment so far only for Oracle, keep working to expand to different databases, thanks for everything and we hope that the projects go ahead.
+                                Como cualquier proyecto se encuentra en su fase inicial lanzado la versión 1 para su utilizacion hasta el momento sólo se encuentra la compatibilidad para Oracle, seguiremos trabajando para ampliar a diferentes bases de datos, gracias por su apoyo y esperamos que este proyecto siga adelante.
                             </div>
                         </div>
                     </div>
@@ -211,43 +240,53 @@
                 <ul class="nav nav-tabs">
                     <li class="active">
                         <a href="javascript:;" data-target="#quick_sidebar_tab_1" data-toggle="tab">
-                            Downloads
+                            Descargas
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;" data-target="#quick_sidebar_tab_2" data-toggle="tab">
-                            Changelog
+                            Cambios
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
-                            Donate
+                            Donar
                         </a>
                     </li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab_1">
                         <div class="page-quick-sidebar-alerts-list" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list">
-                            <h3 class="list-heading">Latest Version</h3>
+                            <h3 class="list-heading">Ultima Version</h3>
                             <ul class="media-list list-items">
                                 <li class="media" onclick="Download('LatestOracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
-                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.1.5 for Oracle</h4>
-                                        <div class="media-heading-sub"> Final Release</div>
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.1.6 para Oracle</h4>
+                                        <div class="media-heading-sub"> Ultimo Lanzamiento</div>
+                                        <div class="label label-sm label-danger">
+                                            <span class="date"><i class="fa fa-database"></i>30/10/2016</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h3 class="list-heading">Versiones Anteriores</h3>
+                            <ul class="media-list list-items">
+                                <li class="media" onclick="Download('1.0.1.5 Oracle');" >
+                                    <div class="media-status"></div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.1.5 para Oracle</h4>
+                                        <div class="media-heading-sub">Version 1.0.1.5</div>
                                         <div class="label label-sm label-danger">
                                             <span class="date"><i class="fa fa-database"></i>07/02/2016</span>
                                         </div>
                                     </div>
                                 </li>
-                            </ul>
-                            <h3 class="list-heading">Old Versions</h3>
-                            <ul class="media-list list-items">
-                                <li class="media" onclick="Download('1.0.0.5 Oracle');" >
+								<li class="media" onclick="Download('1.0.0.5 Oracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
-                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.5 for Oracle</h4>
-                                        <div class="media-heading-sub">Release 1.0.0.5</div>
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.5 para Oracle</h4>
+                                        <div class="media-heading-sub">Version 1.0.0.5</div>
                                         <div class="label label-sm label-danger">
                                             <span class="date"><i class="fa fa-database"></i>01/01/2016</span>
                                         </div>
@@ -256,8 +295,8 @@
 								<li class="media" onclick="Download('1.0.0.0 Oracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
-                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.0 for Oracle</h4>
-                                        <div class="media-heading-sub">Release 1.0.0.0</div>
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.0 para Oracle</h4>
+                                        <div class="media-heading-sub">Version 1.0.0.0</div>
                                         <div class="label label-sm label-danger">
                                             <span class="date"><i class="fa fa-database"></i>29/12/2015</span>
                                         </div>
@@ -270,7 +309,47 @@
                         <div class="page-quick-sidebar-alerts-list">
                             <h3 class="list-heading">
 								<i class="fa fa-database"></i> 
-								v1.0.1.5 for Oracle
+								v1.0.1.6 para Oracle
+								<div class="label label-sm label-danger">
+									<span class="date">
+										<i class="fa fa-database"></i>
+										30/10/2016
+									</span>
+								</div>
+							</h3>
+							<ul class="feeds list-items">
+                                <li>
+                                    <div class="col1">
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-info">
+                                                    <i class="fa fa-info"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Reparados algunos bugs
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-success">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Implementado la liberación de recursos
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+							<h3 class="list-heading">
+								<i class="fa fa-database"></i> 
+								v1.0.1.5 para Oracle
 								<div class="label label-sm label-danger">
 									<span class="date">
 										<i class="fa fa-database"></i>
@@ -289,7 +368,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Removed variable DataSet ds, now is List&lt;DataTable&gt; Tables
+                                                    Variable removida DataSet ds, ahora es List&lt;DataTable&gt; Tables
                                                 </div>
                                             </div>
                                         </div>
@@ -301,7 +380,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Now detect client x64
+                                                    Ahora detecta clientes x64
                                                 </div>
                                             </div>
                                         </div>
@@ -313,7 +392,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Added method for return value
+													Agregado metodo para regresar valor
                                                 </div>
                                             </div>
                                         </div>
@@ -325,7 +404,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Added method for return values
+													Agregado metodo para regresar valores
                                                 </div>
                                             </div>
                                         </div>
@@ -334,7 +413,7 @@
                             </ul>
 							<h3 class="list-heading">
 								<i class="fa fa-database"></i> 
-								v1.0.0.5 for Oracle
+								v1.0.0.5 para Oracle
 								<div class="label label-sm label-danger">
 									<span class="date">
 										<i class="fa fa-database"></i>
@@ -353,7 +432,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Fixed some bugs
+                                                    Reparados algunos bugs
                                                 </div>
                                             </div>
                                         </div>
@@ -365,7 +444,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Integration exception of mistakes
+                                                    Integración excepción de errores
                                                 </div>
                                             </div>
                                         </div>
@@ -374,7 +453,7 @@
                             </ul>
 							<h3 class="list-heading">
 								<i class="fa fa-database"></i> 
-								v1.0.0.0 for Oracle
+								v1.0.0.0 para Oracle
 								<div class="label label-sm label-danger">
 									<span class="date">
 										<i class="fa fa-database"></i>
@@ -393,7 +472,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Only makes calls to procedures
+                                                    Sólo realiza llamadas a procedimientos
                                                 </div>
                                             </div>
                                         </div>
@@ -405,7 +484,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Implemented methods of execution of stored procedures
+                                                    Implementado métodos para la ejecución de procedimientos almacenados
                                                 </div>
                                             </div>
                                         </div>
@@ -417,7 +496,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Implemented method for Xcopy versions of Oracle
+                                                    Implementado método para las versiones Xcopy de Oracle
                                                 </div>
                                             </div>
                                         </div>
@@ -430,7 +509,7 @@
                         <div class="page-quick-sidebar-settings-list">
                             <ul class="list-items borderless">
                                 <li>
-                                    Your donations will be helpful to the continuation of this project, thank you very much.
+                                    Sus donaciones serán útiles para la continuación de este proyecto, muchas gracias.
                                     <center>
                                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                                             <input type="hidden" name="cmd" value="_s-xclick">
@@ -449,7 +528,7 @@
     </div>
     <div class="page-footer">
         <div class="page-footer-inner">
-            2016 &copy; ExeSQL by Irving Hinojos.
+            2016 &copy; ExeSQL por Irving Hinojos.
         </div>
         <div class="scroll-to-top">
             <i class="icon-arrow-up"></i>
