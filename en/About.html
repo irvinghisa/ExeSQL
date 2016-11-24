@@ -9,8 +9,8 @@
     <title>ExeSQL | Library for .Net</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Library for .Net for client database" name="description" />
-    <meta content="Ing. Irving Hinojos" name="author" />
+    <meta content=".Net Library for customer database" name="description" />
+    <meta content="Eng. Irving Hinojos" name="author" />
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="../Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="../Content/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -20,7 +20,6 @@
     <link href="../Content/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
     <link href="../Content/components-md.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link href="../Content/plugins-md.min.css" rel="stylesheet" type="text/css" />
-	<link href="../Content/profile.min.css" rel="stylesheet" type="text/css" />
     <link href="../Content/layout.min.css" rel="stylesheet" type="text/css" />
     <link href="../Content/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <link href="../Content/custom.min.css" rel="stylesheet" type="text/css" />
@@ -46,6 +45,7 @@
                     <li class="classic-menu-dropdown">
                         <a href="index.html">
                             Home
+                            <span class="selected"> </span>
                         </a>
                     </li>
                     <li class="classic-menu-dropdown">
@@ -56,13 +56,25 @@
 					<li class="classic-menu-dropdown active">
                         <a href="About.html">
                             About
-							<span class="selected"> </span>
                         </a>
                     </li>
                     <li class="classic-menu-dropdown">
                         <a href="javascript:;" class="page-quick-sidebar-toggler2">
                             Downloads
                         </a>
+                    </li>
+					<li class="classic-menu-dropdown dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                            Language
+                        </a>
+						<ul class="dropdown-menu">
+							<li class="external">
+								<a href="../">Español</a>
+							</li>
+							<li class="external">
+								<a href="">English</a>
+							</li>
+						</ul>
                     </li>
                 </ul>
             </div>
@@ -87,6 +99,7 @@
                         <li class="nav-item start" >
                             <a href="index.html" class="nav-link nav-toggle">
                                 Home
+                                <span class="selected"> </span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -94,16 +107,32 @@
                                 Documentation
                             </a>
                         </li>
-						<li class="nav-item active open" >
-                            <a href="About.html" class="nav-link nav-toggle">
-                                About
-                                <span class="selected"> </span>
-                            </a>
-                        </li>
+						<li class="nav-item active open">
+							<a href="About.html">
+								About
+							</a>
+						</li>
                         <li class="nav-item">
                             <a href="javascript:;" class="page-quick-sidebar-toggler2">
                                 Downloads
                             </a>
+                        </li>
+						<li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                Language
+                            </a>
+							<ul class="sub-menu">
+								<li class="nav-item">
+									<a href="../" class="nav-link">
+										<span class="title">Español</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="" class="nav-link">
+										<span class="title">English</span>
+									</a>
+								</li>
+							</ul>
                         </li>
                     </ul>
                 </div>
@@ -114,13 +143,13 @@
                 <div class="page-bar">
                     <ul class="page-breadcrumb">
                         <li>
-                            <span>Home</span>
+                            <span>About</span>
                         </li>
                     </ul>
                 </div>
                 <h3 class="page-title">
                     ExeSQL
-                    <small>Library for .Net for client of database</small>
+                    <small>.Net Library for customer database</small>
                 </h3>
                 <div class="row">
 					<div class="col-md-offset-3 col-md-3">
@@ -161,7 +190,7 @@
 									</div>
 								</div>
 								<div>
-									<h4 class="profile-desc-title">List Projects of Irving Hinojos</h4>
+									<h4 class="profile-desc-title">List of Irving Hinojos Projects</h4>
 									<span class="profile-desc-text">Own projects that I have developed.</span>
 									<div class="margin-top-20 profile-desc-link">
 										<i class="fa fa-cloud"></i>
@@ -195,34 +224,44 @@
                     </li>
                     <li>
                         <a href="javascript:;" data-target="#quick_sidebar_tab_2" data-toggle="tab">
-                            Changelog
+                            Changes Log
                         </a>
                     </li>
                     <li>
                         <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
-                            Donate
+                            Donaate
                         </a>
                     </li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active page-quick-sidebar-chat" id="quick_sidebar_tab_1">
                         <div class="page-quick-sidebar-alerts-list" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list">
-                            <h3 class="list-heading">Latest Version</h3>
+                            <h3 class="list-heading">Last Version</h3>
                             <ul class="media-list list-items">
                                 <li class="media" onclick="Download('LatestOracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
-                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.1.5 for Oracle</h4>
-                                        <div class="media-heading-sub"> Final Release</div>
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.1.6 for Oracle</h4>
+                                        <div class="media-heading-sub"> Last Release</div>
                                         <div class="label label-sm label-danger">
-                                            <span class="date"><i class="fa fa-database"></i>07/02/2016</span>
+                                            <span class="date"><i class="fa fa-database"></i>30/10/2016</span>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                             <h3 class="list-heading">Old Versions</h3>
                             <ul class="media-list list-items">
-                                <li class="media" onclick="Download('1.0.0.5 Oracle');" >
+                                <li class="media" onclick="Download('1.0.1.5 Oracle');" >
+                                    <div class="media-status"></div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.1.5 for Oracle</h4>
+                                        <div class="media-heading-sub">Release 1.0.1.5</div>
+                                        <div class="label label-sm label-danger">
+                                            <span class="date"><i class="fa fa-database"></i>07/02/2016</span>
+                                        </div>
+                                    </div>
+                                </li>
+								<li class="media" onclick="Download('1.0.0.5 Oracle');" >
                                     <div class="media-status"></div>
                                     <div class="media-body">
                                         <h4 class="media-heading"><i class="fa fa-cloud-download"></i> v1.0.0.5 for Oracle</h4>
@@ -247,6 +286,46 @@
                     </div>
                     <div class="tab-pane page-quick-sidebar-alerts" id="quick_sidebar_tab_2">
                         <div class="page-quick-sidebar-alerts-list">
+                            <h3 class="list-heading">
+								<i class="fa fa-database"></i> 
+								v1.0.1.6 for Oracle
+								<div class="label label-sm label-danger">
+									<span class="date">
+										<i class="fa fa-database"></i>
+										30/10/2016
+									</span>
+								</div>
+							</h3>
+							<ul class="feeds list-items">
+                                <li>
+                                    <div class="col1">
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-info">
+                                                    <i class="fa fa-info"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Fixed some bugs
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="cont">
+                                            <div class="cont-col1">
+                                                <div class="label label-sm label-success">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="cont-col2">
+                                                <div class="desc">
+                                                    Implemented the release of resources
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
 							<h3 class="list-heading">
 								<i class="fa fa-database"></i> 
 								v1.0.1.5 for Oracle
@@ -268,7 +347,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Removed variable DataSet ds, now is List&lt;DataTable&gt; Tables
+                                                    Variable removed from DataSet ds, is now List &lt;DataTable&gt; Tables
                                                 </div>
                                             </div>
                                         </div>
@@ -280,7 +359,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Now detect client x64
+                                                    Now detects x64 clients
                                                 </div>
                                             </div>
                                         </div>
@@ -292,7 +371,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Added method for return value
+													Added method to return value
                                                 </div>
                                             </div>
                                         </div>
@@ -304,14 +383,14 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Added method for return values
+													Added method to return values
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <h3 class="list-heading">
+							<h3 class="list-heading">
 								<i class="fa fa-database"></i> 
 								v1.0.0.5 for Oracle
 								<div class="label label-sm label-danger">
@@ -344,7 +423,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Integration exception of mistakes
+                                                    Integration error exception
                                                 </div>
                                             </div>
                                         </div>
@@ -372,7 +451,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Only makes calls to procedures
+                                                    It only makes calls to procedures
                                                 </div>
                                             </div>
                                         </div>
@@ -384,7 +463,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Implemented methods of execution of stored procedures
+                                                    Implemented methods for executing stored procedures
                                                 </div>
                                             </div>
                                         </div>
@@ -396,7 +475,7 @@
                                             </div>
                                             <div class="cont-col2">
                                                 <div class="desc">
-                                                    Implemented method for Xcopy versions of Oracle
+                                                    Implemented method for Oracle Xcopy versions
                                                 </div>
                                             </div>
                                         </div>
@@ -409,7 +488,7 @@
                         <div class="page-quick-sidebar-settings-list">
                             <ul class="list-items borderless">
                                 <li>
-                                    Your donations will be helpful to the continuation of this project, thank you very much.
+                                    Your donations will be useful for the continuation of this project, thank you very much.
                                     <center>
                                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                                             <input type="hidden" name="cmd" value="_s-xclick">
@@ -428,7 +507,7 @@
     </div>
     <div class="page-footer">
         <div class="page-footer-inner">
-            2016 &copy; ExeSQL by Irving Hinojos.
+            2016 &copy; ExeSQL By Irving Hinojos.
         </div>
         <div class="scroll-to-top">
             <i class="icon-arrow-up"></i>
